@@ -1,0 +1,116 @@
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: #1e1e2f;
+  color: #f1f1f1;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.app {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 20px;
+  background: #282c34;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #444;
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #00ffd0;
+}
+
+.word-display {
+  font-size: 2rem;
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.letter {
+  border-bottom: 3px solid #00ffd0;
+  width: 30px;
+  text-transform: uppercase;
+}
+
+.keyboard {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.key {
+  padding: 10px 15px;
+  font-size: 1rem;
+  background-color: #444;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.key:disabled {
+  background-color: #777;
+  cursor: not-allowed;
+}
+
+.key:hover:not(:disabled) {
+  background-color: #00ffd0;
+  color: #000;
+}
+
+.lives {
+  margin-top: 10px;
+}
+
+.lives ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.life {
+  padding: 5px 10px;
+  background-color: #00ffd0;
+  color: #000;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: #333;
+  padding: 30px;
+  border-radius: 10px;
+  color: #fff;
+}
+
+.restart-button {
+  background-color: #00ffd0;
+  color: #000;
+  padding: 10px 20px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
